@@ -14,4 +14,19 @@
 
 **Процесс выполнения задания:**
 
-![Иллюстрация к проекту](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/1.build.png)
+
+!(https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/dockerfile)
+
+[build](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/1.build.png)
+
+
+![push](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/2.docker_push.png)
+
+
+![manifest](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/3.apply_manifest.png)
+
+
+![completed](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/4.completed.png)
+
+
+![logs](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/5.logs.png)
