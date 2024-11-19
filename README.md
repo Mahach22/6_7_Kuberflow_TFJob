@@ -25,8 +25,9 @@
 5. Проверяем статус выполнения задания командой ```kubectl get pods```
 ![manifest](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/3.apply_manifest.png)
 6. Задание завершилось со статусом Completed
+
 ![completed](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/4.completed.png)
-7. Проверяем логи, чтобы увидеть эпохи командой ```kubectl logs mnist-worker-0```
+8. Проверяем логи, чтобы увидеть эпохи командой ```kubectl logs mnist-worker-0```
 ![logs](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/5.logs.png)
 
 
