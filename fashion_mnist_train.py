@@ -10,7 +10,6 @@ def load_and_preprocess_data():
     x_train = x_train.astype("float32") / 255.0
     x_test = x_test.astype("float32") / 255.0
 
-    # Add a channel dimension for compatibility with CNN
     x_train = np.expand_dims(x_train, -1)
     x_test = np.expand_dims(x_test, -1)
 
