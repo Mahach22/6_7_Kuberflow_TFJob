@@ -29,7 +29,7 @@ CMD ["python", "/app/fashion_mnist_train.py"]
 ```
 
 
-[build](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/1.build.png)
+![build](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/1.build.png)
 
 
 ![push](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/2.docker_push.png)
