@@ -18,16 +18,24 @@
 1. Создаем [Python-скрипт для обучения модели на наборе данных MNIST](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/fashion_mnist_train.py) 
 2. Создаем [dockerfile](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/dockerfile) для упаковки скрипта и необходимых зависимостей в контейнер
 3. Собираем Docker-образ командой ```docker build -t mahach22/fashion-mnist-train:v2 .``` (с первой версией не сложилось, модель оказалось сложной для виртуальной машины)
+
 ![build](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/1.build.png)
+
 Отправляем образ в докер хаб командой ```docker push mahach22/fashion-mnist-train:v2```
+
 ![push](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/2.docker_push.png)
-4. Создаем [манифест](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/mnist-tfjob.yaml) для Kuberflow TFJob, который будет проводить обучение модели в Kubernetes командой ```kubectl apply -f mnist-tfjob.yaml```
-5. Проверяем статус выполнения задания командой ```kubectl get pods```
+
+5. Создаем [манифест](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/mnist-tfjob.yaml) для Kuberflow TFJob, который будет проводить обучение модели в Kubernetes командой ```kubectl apply -f mnist-tfjob.yaml```
+6. Проверяем статус выполнения задания командой ```kubectl get pods```
+
 ![manifest](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/3.apply_manifest.png)
-6. Задание завершилось со статусом Completed
+
+8. Задание завершилось со статусом Completed
 
 ![completed](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/4.completed.png)
-8. Проверяем логи, чтобы увидеть эпохи командой ```kubectl logs mnist-worker-0```
+
+10. Проверяем логи, чтобы увидеть эпохи командой ```kubectl logs mnist-worker-0```
+
 ![logs](https://github.com/Mahach22/6_7_Kuberflow_TFJob/blob/main/5.logs.png)
 
 
